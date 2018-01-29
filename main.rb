@@ -37,7 +37,7 @@ rss = RSS::Parser.parse(RSS_URL, false)
 firstIssue = rss.items.first
 guid = firstIssue.guid.content
 lastKnownGuid = getLastKnownGuid
-return if lastKnownGuid == guid
+exit(true) if lastKnownGuid == guid
 
 setLastKnownGuid(guid)
 
