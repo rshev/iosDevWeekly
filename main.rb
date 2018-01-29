@@ -39,8 +39,6 @@ guid = firstIssue.guid.content
 lastKnownGuid = getLastKnownGuid
 exit(true) if lastKnownGuid == guid
 
-setLastKnownGuid(guid)
-
 description = firstIssue.description
 links = description.scan(LINKS_REGEX)
 
@@ -56,4 +54,7 @@ links.each do |element|
     pushToInstapaper(params)
     sleep 0.5
 end
+
+setLastKnownGuid(guid)
+
 puts "🎉🎉🎉"
