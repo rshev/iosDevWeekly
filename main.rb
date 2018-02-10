@@ -5,8 +5,8 @@ require 'rss'
 require 'uri'
 require 'net/http'
 
-LASTKNOWNGUID_FILENAME = '.lastKnownGuid'
-INSTAPAPER_API_ADD_URI = URI('https://www.instapaper.com/api/add')
+LASTKNOWNGUID_FILENAME = "#{__dir__}/.lastKnownGuid"
+INSTAPAPER_API_ADD_URI = URI("https://www.instapaper.com/api/add")
 
 RSS_URL = "https://iosdevweekly.com/issues.rss"
 LINKS_REGEX = /<h4><a href="(.*)">(.*)<\/a><\/h4>/
