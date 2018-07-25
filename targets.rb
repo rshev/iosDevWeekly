@@ -1,3 +1,6 @@
+require 'uri'
+require 'net/http'
+
 module TargetFormPostable
     def post_form(uri, params)
         begin

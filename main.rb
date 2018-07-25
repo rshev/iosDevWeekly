@@ -4,7 +4,6 @@ require_relative 'secrets'
 require_relative 'targets'
 require 'rss'
 require 'uri'
-require 'net/http'
 
 LASTKNOWNGUID_FILENAME = "#{__dir__}/.lastKnownGuid"
 
